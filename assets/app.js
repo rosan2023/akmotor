@@ -145,7 +145,7 @@ function getSettings() {
 }
 
 function getInventory() {
-  return readStore(STORE_KEYS.inventory, defaults.inventory).map((car) => ({
+  return readStore(STORE_KEYS.inventory).map((car) => ({
     ...car,
     images: Array.isArray(car.images) && car.images.length
       ? car.images.filter(Boolean)
