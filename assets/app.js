@@ -17,7 +17,7 @@ const CURRENCIES = {
 };
 
 const defaults = {
-  inventory: [
+  /**inventory: [
     {
       id: crypto.randomUUID(),
       brand: "Toyota",
@@ -93,13 +93,13 @@ const defaults = {
       features: "Panoramic Roof, Parking Sensors, Navigation",
       status: "available"
     }
-  ],
+  ],**/
   settings: {
-    dealerName: "Prime Auto Dealer",
-    phone: "+1 000 555 0123",
-    email: "sales@primeautodealer.com",
-    address: "15 Market Street, Downtown",
-    currency: "USD"
+    dealerName: "AK MOTORS",
+    phone: "+852 91054784",
+    email: "akmotorsbs@gmail.com",
+    address: "2794 Wing Ning Lei, Wang Toi Shan, Pat Heung, Kam Tin, Yuen Long, New Territory, Hong Kong",
+    currency: "HKD"
   },
   messages: [],
   sales: [],
