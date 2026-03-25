@@ -17,7 +17,7 @@ const CURRENCIES = {
 };
 
 const defaults = {
-  /**inventory: [
+  inventory: [
     {
       id: crypto.randomUUID(),
       brand: "Toyota",
@@ -93,7 +93,7 @@ const defaults = {
       features: "Panoramic Roof, Parking Sensors, Navigation",
       status: "available"
     }
-  ],**/
+  ],
   settings: {
     dealerName: "AK MOTORS",
     phone: "+852 91054784",
@@ -145,7 +145,7 @@ function getSettings() {
 }
 
 function getInventory() {
-  return readStore(STORE_KEYS.inventory).map((car) => ({
+  return readStore(STORE_KEYS.inventory, defaults.inventory).map((car) => ({
     ...car,
     images: Array.isArray(car.images) && car.images.length
       ? car.images.filter(Boolean)
